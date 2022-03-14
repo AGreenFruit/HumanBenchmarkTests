@@ -1,8 +1,7 @@
 import numpy as np
 import cv2
 from mss import mss
-# from PIL import Image
-import time
+# import time
 import pyautogui
 
 def main():
