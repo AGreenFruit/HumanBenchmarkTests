@@ -51,7 +51,7 @@ def main():
 	string = string.replace('\r', '').replace('\n', "___").replace("Typing Test", "")
 	string = string.replace("How many words per minute can you type?","").replace("___", " ").replace("  "," ").strip()
 	string = string[::-1].replace("Start typing to begin"[::-1], "", 1)[::-1]
-	print(string)
+	# print(string)
 	pyautogui.write(string)
 
 

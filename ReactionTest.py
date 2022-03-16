@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 from mss import mss
-# import time
+import time
 import pyautogui
 
 def main():
@@ -28,12 +28,8 @@ def main():
 			theta = lines[i][0][1]
 			a = np.cos(theta)
 			b = np.sin(theta)
-			x0 = a*rho
 			y0 = b*rho
-			x1 = int(x0 + 1000*(-b))
 			y1 = int(y0 + 1000*(a))
-			x2 = int(x0 - 1000*(-b))
-			y2 = int(y0 - 1000*(a))
 			if i == 0:
 				point = y1
 
@@ -60,4 +56,10 @@ def main():
 			counter += 1
 		if counter == 10:
 			break;
+
+seconds = 3
+while seconds > 0:
+	print("Starts in...",seconds)
+	time.sleep(1)
+	seconds -= 1
 main() 

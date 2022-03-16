@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 from mss import mss
-# import time
+import time
 import pyautogui
 
 # Processes the image and find the locations of the circles, returns the centerpoint
@@ -46,12 +46,8 @@ def main():
 			theta = lines[i][0][1]
 			a = np.cos(theta)
 			b = np.sin(theta)
-			x0 = a*rho
 			y0 = b*rho
-			x1 = int(x0 + 10000*(-b))
 			y1 = int(y0 + 10000*(a))
-			x2 = int(x0 - 10000*(-b))
-			y2 = int(y0 - 10000*(a))
 			if i == 0:
 				bottom = y1
 			else:
@@ -73,4 +69,11 @@ def main():
 			cv2.destroyAllWindows()
 			break
 
+
+
+seconds = 3
+while seconds > 0:
+	print("Starts in...",seconds)
+	time.sleep(1)
+	seconds -= 1
 main()
