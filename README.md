@@ -45,4 +45,12 @@ time
 tesseract - Some installation required ([Github page](https://github.com/madmaze/pytesseract), [youtube tutorial](https://www.youtube.com/watch?v=QJkKDsjj1oA))  
 
 Start the program using TypingTest.py, and make sure the browser window is maximized.
-Within 3 seconds, make sure to click on the typing box and check to see that you see a blinking cursor.
+Within 3 seconds, make sure to click on the typing box and check to see that you see a blinking cursor.  
+  
+  
+  
+  
+Sidenote  
+---------------  
+Tested using on a system using a 3080, 8700k, and a 240hz monitor.  
+Also used chrome at 1080x1920 resolution for humanbenchmark.com
