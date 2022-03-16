@@ -52,5 +52,5 @@ Within 3 seconds, make sure to click on the typing box and check to see that you
   
 Sidenote  
 ---------------  
-Tested using on a system using a 3080, 8700k, and a 240hz monitor.  
+Tested on a system using a 3080, 8700k, and a 240hz monitor.  
 Also used chrome at 1080x1920 resolution for humanbenchmark.com
